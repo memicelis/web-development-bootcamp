@@ -1,0 +1,56 @@
+/* Defaul typography and color
+Main color: #272A31;
+Color 2 : #EC5242;
+Color 3 : #D3D3D3;
+
+-- Font -
+Main font: Cocogoose;
+Font: Lato; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.enabled-menu {
+  width: 15%;
+  margin: 1rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #272a31;
+  font-size: 48px;
+}
+
+.mobile-menu-expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+  backdrop-filter: blur(8px);
+  flex-direction: column;
+  height: 100vh;
+  display: none;
+}
+
+.closing-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.mobile-menu-expanded.visible {
+  display: block;
+}
