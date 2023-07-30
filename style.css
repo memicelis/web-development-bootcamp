@@ -13,24 +13,41 @@ Font: Lato; */
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.main-section {
+  padding: 1.6rem;
+  background-image: url(images/backgroundHeader.png);
+  background-size: cover;
+  padding-bottom: 7rem;
+}
+
+.mobile-menu {
+  margin-bottom: 4rem;
+}
+
 .enabled-menu {
   width: 15%;
-  margin: 1rem;
 }
 
 .navigation {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 2.4rem;
   align-items: center;
 }
 
 .navigation a {
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
   color: #272a31;
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 .mobile-menu-expanded {
@@ -38,9 +55,9 @@ Font: Lato; */
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #d3d3d3;
+  padding: 3.6rem;
+  background-color: rgba(211, 211, 211, 0.9);
   backdrop-filter: blur(8px);
-  flex-direction: column;
   height: 100vh;
   display: none;
 }
@@ -48,9 +65,46 @@ Font: Lato; */
 .closing-icon-container {
   display: flex;
   justify-content: flex-end;
-  margin: 1rem;
 }
-
+.closing-icon-container img {
+  width: 8%;
+}
 .mobile-menu-expanded.visible {
   display: block;
+}
+
+.headings {
+  color: #ec5242;
+  text-align: start;
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+}
+
+.main-text {
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.border-text {
+  padding: 2rem;
+  font-size: 1.6rem;
+  border: 2px solid #fff;
+  margin-bottom: 2rem;
+}
+
+.date-heading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #272a31;
+  margin-bottom: 1rem;
+}
+
+.date-span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #8f8f8f;
 }
