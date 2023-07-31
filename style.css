@@ -121,11 +121,11 @@ body {
 }
 
 .bootcamp-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.bootcamp-title-separator {
+.title-separator {
   width: 10%;
   border: 1px solid #ec5242;
   margin-bottom: 2rem;
@@ -176,4 +176,122 @@ ion-icon {
   padding: 2rem 3rem;
   font-weight: 500;
   margin-bottom: 3rem;
+}
+
+.instructors-section {
+  padding: 1rem;
+  padding-top: 4rem;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructors-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.instructors-section .title-separator {
+  margin-bottom: 6rem;
+}
+
+.flex-instructors {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.instructor {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.bg-img {
+  width: 15%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 0.5rem;
+}
+
+.instructors-img {
+  z-index: 2;
+  position: relative;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  width: 30%;
+  height: 30%;
+}
+
+.instructor-right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instructor-name {
+  font-size: 1.8rem;
+}
+
+.instructor-title {
+  color: #ec5242;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+.instructor-hr {
+  width: 10%;
+  border: 0.5px solid #c8c8c8;
+}
+
+.instructor-description {
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+.partners-section {
+  padding-top: 4rem;
+  background-color: rgb(91, 91, 91);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d3d3d3;
+}
+
+.partners-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.partners-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-partner {
+  width: 26%;
+  filter: grayscale(100%) contrast(0%);
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-digital {
+  max-width: 20%;
+}
+
+.footer-span {
+  color: #8f8f8f;
 }

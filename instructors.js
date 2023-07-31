@@ -1,4 +1,4 @@
-const youngerInstructors = [
+const instructorsData = [
   {
     name: 'Sara Garcia',
     title: 'Web Development Instructor',
@@ -24,7 +24,7 @@ const youngerInstructors = [
     name: 'Jake Thompson',
     title: 'Mobile App Development Instructor',
     description:
-      'Jake is an experienced mobile app developer who is passionate about building innovative and user-friendly applications. He loves teaching others how to create their own apps.',
+      'Jake is an experienced mobile app developer who is passionate about building innovative and user-friendly applications.',
     img: './images/jake.jpg',
   },
   {
@@ -42,3 +42,35 @@ const youngerInstructors = [
     img: './images/max.jpg',
   },
 ];
+
+const instructorsSection = document.querySelector('.instructors-section');
+
+const instructorsTitle = document.createElement('h3');
+instructorsTitle.classList.add('instructors-title');
+instructorsTitle.innerHTML = 'Featured Instructors';
+instructorsSection.appendChild(instructorsTitle);
+
+const titleSeparator = document.createElement('hr');
+titleSeparator.classList.add('title-separator');
+instructorsSection.appendChild(titleSeparator);
+
+const instructors = document.createElement('div');
+instructors.classList.add('flex-instructors');
+instructorsSection.appendChild(instructors);
+
+instructorsData.forEach((ins) => {
+  const instructor = document.createElement('article');
+  instructor.classList.add('instructor');
+  instructor.innerHTML = `
+  <img src="./images/bg-img-bg.jpg" class="bg-img" alt="Image with black squares" />
+  <img src=${ins.img} class="instructors-img" alt="speaker image">
+  <div class="instructor-right-block">
+  <h3 class="instructor-name">${ins.name}</h3>
+  <h5 class="instructor-title">${ins.title}</h5>
+  <hr class="instructor-hr">
+  <p class="instructor-description"> ${ins.description}</p>
+  </div>
+  </div>
+ `;
+  instructors.appendChild(instructor);
+});
