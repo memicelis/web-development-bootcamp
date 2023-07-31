@@ -108,3 +108,72 @@ body {
   font-weight: 700;
   color: #8f8f8f;
 }
+
+.bootcamp-section {
+  background-color: #272a31;
+  background-image: url(images/patternBackgroundmain.png);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.bootcamp-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.bootcamp-title-separator {
+  width: 10%;
+  border: 1px solid #ec5242;
+  margin-bottom: 2rem;
+}
+
+.flex-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.program {
+  padding: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #7a7d9161;
+  gap: 1rem;
+}
+
+ion-icon {
+  font-size: 48px;
+  fill: #ec5242;
+}
+
+.program-text {
+  color: #ec5242;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 30%;
+}
+
+.program-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #fff;
+  width: 50%;
+}
+
+.join {
+  background-color: #ec5242;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
