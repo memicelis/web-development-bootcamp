@@ -97,7 +97,7 @@ body {
 
 .border-text {
   padding: 2rem;
-  color: #8f8f8f;
+  color: #272a31;
   font-size: 1.4rem;
   border: 2px solid #fff;
   margin-bottom: 2rem;
@@ -128,7 +128,7 @@ body {
 }
 
 .bootcamp-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .instructors-title {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -257,6 +257,7 @@ body {
   color: #ec5242;
   font-size: 1.2rem;
   margin-top: -1rem;
+  font-style: italic;
 }
 
 .instructor-hr {
@@ -266,7 +267,7 @@ body {
 
 .instructor-description {
   font-size: 1rem;
-  color: #8f8f8f;
+  color: #272a31;
 }
 
 .partners-section {
@@ -279,7 +280,7 @@ body {
 }
 
 .partners-title {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -349,7 +350,7 @@ body {
 }
 
 .about-logo-title {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -386,7 +387,7 @@ body {
 }
 
 .events-title {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
@@ -512,6 +513,10 @@ body {
     margin-bottom: 1rem;
   }
 
+  .border-text {
+    width: 60%;
+  }
+
   .main-text {
     font-size: 6.4rem;
   }
@@ -588,6 +593,7 @@ body {
     position: relative;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    max-width: 20%;
   }
 
   .instructors-img img {
@@ -604,6 +610,14 @@ body {
 
   .bg-img img {
     width: 100%;
+  }
+
+  .instructor-name {
+    font-size: 1.6rem;
+  }
+
+  .instructor-hr {
+    width: 5%;
   }
 
   .logo-partner {
@@ -628,6 +642,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .main-section-about .sub-heading {
+    display: none;
+  }
+
+  .main-section-about .main-text {
+    font-size: 4.6rem;
+  }
+
+  .main-section-about .border-text {
+    width: 75%;
+    line-height: 2.4rem;
+    padding: 4rem;
   }
 
   .events-imgs-container {
