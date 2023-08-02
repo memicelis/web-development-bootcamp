@@ -36,23 +36,52 @@
           <li class="menu"><a href="#contact" class="hover">Contact</a></li>
         </ul>
       </nav>
-      <div class="headings">
-        <p class="sub-heading">"Speed up Web Dev"</p>
-        <h1 class="main-text">Web Development Bootcamp</h1>
-      </div>
-      <div class="border-text">
-        <p class="border-paragraph">
-          Join our intensive Web Development Bootcamp in 2023 and embark on a
-          transformative journey in the world of web development. In just a few
-          months, you'll acquire the skills and expertise needed to thrive in
-          this exciting industry.
+      <header class="desktop-menu">
+        <div class="pre-header">
+          <ion-icon name="logo-facebook" class="icon"></ion-icon>
+          <ion-icon name="logo-twitter" class="icon"></ion-icon>
+          <span class="tabs">English</span>
+          <span class="tabs">My Page</span>
+          <span class="tabs">Logout</span>
+        </div>
+        <div class="header">
+          <a href="index.html" class="logo-imgs"
+            ><img src="images/webdevsm.png" class="header-logo" alt="logo"
+          /></a>
+          <ul class="uo-list-header">
+            <li class="menu"><a href="about.html" class="hover">About</a></li>
+            <li class="menu">
+              <a href="#bootcamp" class="hover">Bootcamp</a>
+            </li>
+            <li class="menu">
+              <a href="#instructors" class="hover">Instructors</a>
+            </li>
+            <li class="menu"><a href="#faq" class="hover">FAQ</a></li>
+            <li class="menu"><a href="#contact" class="hover">Contact</a></li>
+
+            <li><a href="#" class="button-nav">Join</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main-section-block">
+        <div class="headings">
+          <p class="sub-heading">"Speed up Web Dev"</p>
+          <h1 class="main-text">Web Development Bootcamp</h1>
+        </div>
+        <div class="border-text">
+          <p class="border-paragraph">
+            Join our intensive Web Development Bootcamp in 2023 and embark on a
+            transformative journey in the world of web development. In just a
+            few months, you'll acquire the skills and expertise needed to thrive
+            in this exciting industry.
+          </p>
+        </div>
+        <p class="contact-text">
+          Please contact us for any further questions <br />
+          about Web Development Bootcamp! <br />
+          <a href="info@webdevbootcamp.com">info@webdevbootcamp.com</a>
         </p>
       </div>
-      <p class="contact-text">
-        Please contact us for any further questions <br />
-        about Web Development Bootcamp! <br />
-        <a href="info@webdevbootcamp.com">info@webdevbootcamp.com</a>
-      </p>
     </section>
     <section class="about-logo">
       <div class="logo-container">
@@ -76,26 +105,28 @@
         Take a look at the last two Web Development Bootcamps which took place
         in Geneva and Berlin
       </p>
-      <div class="image-container">
-        <img
-          class="card"
-          alt="web development bootcamp"
-          src="images/bootcamp1.jpg"
-        />
-        <div class="image-text">
-          <h4 class="year">2021</h4>
-          <p class="text-event">Web Development Bootcamp in Geneva</p>
+      <div class="events-imgs-container">
+        <div class="image-container">
+          <img
+            class="card"
+            alt="web development bootcamp"
+            src="images/bootcamp1.jpg"
+          />
+          <div class="image-text">
+            <h4 class="year">2021</h4>
+            <p class="text-event">Web Development Bootcamp in Geneva</p>
+          </div>
         </div>
-      </div>
-      <div class="image-container">
-        <img
-          class="card"
-          alt="web development bootcamp"
-          src="images/bootcamp2.jpg"
-        />
-        <div class="image-text">
-          <h4 class="year">2022</h4>
-          <p class="text-event">Web Development Bootcamp in Berlin</p>
+        <div class="image-container">
+          <img
+            class="card"
+            alt="web development bootcamp"
+            src="images/bootcamp2.jpg"
+          />
+          <div class="image-text">
+            <h4 class="year">2022</h4>
+            <p class="text-event">Web Development Bootcamp in Berlin</p>
+          </div>
         </div>
       </div>
     </section>
@@ -118,7 +149,7 @@
         />
       </div>
     </section>
-    <footer class="footer" id="news">
+    <footer class="footer footer-about" id="news">
       <div class="footer-section">
         <img
           src="images/webdevsm.png"
@@ -132,6 +163,14 @@
         </span>
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
