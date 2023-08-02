@@ -573,13 +573,14 @@ body {
   .instructors-section {
     padding-left: 8rem;
     padding-right: 8rem;
+    padding-bottom: 4rem;
   }
 
   .flex-instructors {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   .instructors-img {
