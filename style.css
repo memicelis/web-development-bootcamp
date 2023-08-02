@@ -226,13 +226,21 @@ body {
   margin-left: 0.5rem;
 }
 
+.bg-img img {
+  width: 100%;
+}
+
 .instructors-img {
   z-index: 2;
   position: relative;
   margin-left: 1.5rem;
   margin-top: 1rem;
-  width: 30%;
+  max-width: 30%;
   height: 30%;
+}
+
+.instructors-img img {
+  width: 100%;
 }
 
 .instructor-right-block {
@@ -579,8 +587,10 @@ body {
     position: relative;
     margin-left: 1.5rem;
     margin-top: 1rem;
-    width: 50%;
-    height: 50%;
+  }
+
+  .instructors-img img {
+    width: 100%;
   }
 
   .bg-img {
@@ -589,6 +599,10 @@ body {
     z-index: 1;
     margin-left: 0.5rem;
     filter: grayscale(100%);
+  }
+
+  .bg-img img {
+    width: 100%;
   }
 
   .logo-partner {

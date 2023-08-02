@@ -62,8 +62,12 @@ instructorsData.forEach((ins) => {
   const instructor = document.createElement('article');
   instructor.classList.add('instructor');
   instructor.innerHTML = `
-  <img src="./images/bg-img-bg.jpg" class="bg-img" alt="Image with black squares" />
-  <img src=${ins.img} class="instructors-img" alt="speaker image">
+  <div class="bg-img">
+  <img src="./images/bg-img-bg.jpg"  alt="Image with black squares" />
+  </div>
+  <div class = "instructors-img">
+  <img src=${ins.img} alt="instructor image">
+  </div>
   <div class="instructor-right-block">
   <h3 class="instructor-name">${ins.name}</h3>
   <h5 class="instructor-title">${ins.title}</h5>
