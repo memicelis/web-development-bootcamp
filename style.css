@@ -155,6 +155,7 @@ body {
   align-items: center;
   background-color: #7a7d9161;
   gap: 1rem;
+  width: 80%;
 }
 
 .icon-program {
