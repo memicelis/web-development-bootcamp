@@ -1,0 +1,681 @@
+/* Defaul typography and color
+Main color: #272A31;
+Color 2 : #EC5242;
+Color 3 : #D3D3D3;
+
+-- Font -
+Main font: Cocogoose;
+Font: Lato; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.main-section {
+  padding: 1.6rem;
+  background-image: url(images/backgroundHeader.png);
+  background-size: cover;
+  padding-bottom: 8rem;
+}
+
+.mobile-menu {
+  margin-bottom: 4rem;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.enabled-menu {
+  width: 15%;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 4.8rem;
+}
+
+.mobile-menu-expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3.6rem;
+  background-color: rgba(211, 211, 211, 0.9);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  display: none;
+}
+
+.closing-icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closing-icon-container img {
+  width: 8%;
+}
+
+.mobile-menu-expanded.visible {
+  display: block;
+}
+
+.headings {
+  color: #ec5242;
+  text-align: start;
+}
+
+.sub-heading {
+  font-size: 2.2rem;
+}
+
+.main-text {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.border-text {
+  padding: 2rem;
+  color: #272a31;
+  font-size: 1.4rem;
+  border: 2px solid #fff;
+  margin-bottom: 2rem;
+  line-height: 2.4rem;
+}
+
+.date-heading {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: rgba(39, 42, 49, 0.705);
+  margin-bottom: 1rem;
+}
+
+.date-span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+
+.bootcamp-section {
+  background-color: #272a31;
+  background-image: url(images/patternBackgroundmain.png);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.bootcamp-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.title-separator {
+  width: 10%;
+  border: 1px solid #ec5242;
+  margin-bottom: 2rem;
+}
+
+.flex-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.program {
+  padding: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #7a7d9161;
+  gap: 1rem;
+  width: 80%;
+}
+
+.icon-program {
+  font-size: 4.8rem;
+  color: #ec5242;
+}
+
+.program-text {
+  color: #ec5242;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 30%;
+}
+
+.program-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #fff;
+  width: 50%;
+}
+
+.join {
+  background-color: #ec5242;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.see {
+  display: none;
+}
+
+.instructors-section {
+  padding: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructors-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.instructors-section .title-separator {
+  margin-bottom: 6rem;
+}
+
+.flex-instructors {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.instructor {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.bg-img {
+  width: 15%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 0.5rem;
+}
+
+.bg-img img {
+  width: 100%;
+}
+
+.instructors-img {
+  z-index: 2;
+  position: relative;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  max-width: 30%;
+  height: 30%;
+}
+
+.instructors-img img {
+  width: 100%;
+}
+
+.instructor-right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instructor-name {
+  font-size: 1.8rem;
+}
+
+.instructor-title {
+  color: #ec5242;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+  font-style: italic;
+}
+
+.instructor-hr {
+  width: 10%;
+  border: 0.5px solid #c8c8c8;
+}
+
+.instructor-description {
+  font-size: 1rem;
+  color: #272a31;
+}
+
+.partners-section {
+  padding-top: 4rem;
+  background-color: rgb(91, 91, 91);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d3d3d3;
+}
+
+.partners-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.partners-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-partner {
+  width: 26%;
+  filter: grayscale(100%) contrast(0%);
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-digital {
+  max-width: 10%;
+}
+
+/* ABOUT PAGE */
+.main-section-about .headings {
+  text-align: center;
+}
+
+.main-section-about .border-text {
+  text-align: center;
+  background-color: #fff;
+}
+
+.main-section-about .title-separator {
+  display: none;
+}
+
+.main-section-about .contact-text {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.main-section-about .contact-text a {
+  font-weight: bold;
+  color: #272a31;
+}
+
+.about-logo {
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-logo-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-logo .title-separator {
+  width: 5%;
+  margin-bottom: 3rem;
+}
+
+.logo-award {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+  color: #272a31;
+}
+
+.logo-img {
+  border: 1px solid #d3d3d3;
+  margin-bottom: 3rem;
+}
+
+.section-separator {
+  color: #d3d3d3;
+  margin: 0 -2rem;
+}
+
+.events-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.events-section .title-separator {
+  width: 5%;
+  margin-bottom: 3rem;
+}
+
+.events-description {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+  color: #272a31;
+}
+
+.image-container {
+  background: #ec5242;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 335px;
+  max-height: 188px;
+  opacity: 0.3;
+}
+
+.image-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+}
+
+.year {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.text-event {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    padding: 0 8rem;
+    padding-bottom: 16rem;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .pre-header {
+    display: flex;
+    background-color: #272a31;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.4rem;
+    margin: 0 -8rem;
+    padding-right: 8rem;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+    fill: #fff;
+  }
+
+  .tabs {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .header {
+    background-color: #fff;
+    margin: 0 -8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .header-logo {
+    width: 40%;
+  }
+
+  .uo-list-header {
+    display: flex;
+    gap: 3.6rem;
+    list-style: none;
+  }
+
+  .uo-list-header a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .uo-list-header a:hover {
+    color: #ec5242;
+  }
+
+  .button-nav {
+    border: 2px solid #ec5242;
+    padding: 0.5rem;
+  }
+
+  .headings {
+    width: 80%;
+  }
+
+  .sub-heading {
+    margin-bottom: 1rem;
+  }
+
+  .border-text {
+    width: 60%;
+  }
+
+  .main-text {
+    font-size: 6.4rem;
+  }
+
+  .bootcamp-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .title-separator {
+    width: 4%;
+    margin-bottom: 3rem;
+  }
+
+  .flex-program {
+    flex-direction: row;
+    padding: 0;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20rem;
+    text-align: center;
+    padding-left: 1rem;
+  }
+
+  .icon-program {
+    font-size: 3.6rem;
+    color: #ec5242;
+  }
+
+  .program-text {
+    width: 100%;
+  }
+
+  .program-paragraph {
+    font-size: 1.1rem;
+    width: 100%;
+    height: 40%;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .see {
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: underline;
+  }
+
+  .instructors-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .flex-instructors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .instructors-img {
+    z-index: 2;
+    position: relative;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    max-width: 20%;
+  }
+
+  .instructors-img img {
+    width: 100%;
+  }
+
+  .bg-img {
+    width: 6%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 0.5rem;
+    filter: grayscale(100%);
+  }
+
+  .bg-img img {
+    width: 100%;
+  }
+
+  .instructor-name {
+    font-size: 1.6rem;
+  }
+
+  .instructor-hr {
+    width: 5%;
+  }
+
+  .logo-partner {
+    width: 14%;
+  }
+
+  .partners-section {
+    padding-bottom: 4rem;
+  }
+
+  .footer-section {
+    padding: 2rem;
+  }
+
+  /* ABOUI PAGE */
+
+  .main-section-about {
+    padding-bottom: 8rem;
+  }
+
+  .main-section-about .title-separator {
+    display: block;
+  }
+
+  .main-section-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section-about .sub-heading {
+    display: none;
+  }
+
+  .main-section-about .main-text {
+    font-size: 4.6rem;
+  }
+
+  .main-section-about .border-text {
+    width: 75%;
+    line-height: 2.4rem;
+    padding: 4rem;
+  }
+
+  .events-imgs-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .events-section {
+    margin-bottom: 4rem;
+  }
+
+  .footer-about {
+    background-color: rgb(79, 79, 79);
+    color: #d3d3d3;
+  }
+}
