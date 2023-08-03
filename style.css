@@ -326,6 +326,10 @@ body {
   background-color: #fff;
 }
 
+.main-section-about .title-separator {
+  display: none;
+}
+
 .main-section-about .contact-text {
   font-size: 1.2rem;
   text-align: center;
@@ -638,6 +642,9 @@ body {
     padding-bottom: 8rem;
   }
 
+  .main-section-about .title-separator {
+    display: block;
+  }
   .main-section-block {
     display: flex;
     flex-direction: column;
