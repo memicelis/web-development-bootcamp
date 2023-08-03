@@ -645,6 +645,7 @@ body {
   .main-section-about .title-separator {
     display: block;
   }
+
   .main-section-block {
     display: flex;
     flex-direction: column;
